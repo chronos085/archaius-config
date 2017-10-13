@@ -4,11 +4,11 @@ ribbon:
 zuul:
   routes:
     ignoredService: '*'
-    invoice-service:
+    demo-service:
       path: /invoices/**
-      serviceId: invoice-service
+      serviceId: demo-service
       stripPrefix: false
-    merchant-service:
-      path: /merchants/**
-      serviceId: merchant-service
-      stripPrefix: true
+    #merchant-service:
+    #  path: /merchants/**
+    #  serviceId: merchant-service
+    #  stripPrefix: true
