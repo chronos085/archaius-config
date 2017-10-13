@@ -5,7 +5,7 @@ zuul:
   routes:
     ignoredService: '*'
     demo-service:
-      path: /invoices/**
+      path: /demo/**
       serviceId: demo-service
       stripPrefix: false
     #merchant-service:
