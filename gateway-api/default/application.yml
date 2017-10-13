@@ -12,6 +12,7 @@ zuul:
     demo-service:
       path: /api/demo/**
       serviceId: demo-service
+      servicePath: /demo/all
       stripPrefix: false
     #merchant-service:
     #  path: /merchants/**
