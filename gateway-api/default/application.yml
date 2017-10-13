@@ -1,11 +1,16 @@
-#ribbon:
-#  ReadTimeout: 60000
-#  ConnectTimeout: 3000
+ribbon: 
+  ConnectTimeout: 3000
+  ReadTimeout: 60000
+  maxAutoRetries: 1
+  MaxAutoRetriesNextServer: 2
+  eureka:
+    enabled: true
+    
 zuul:
   routes:
-    #ignoredService: '*'
+    ignoredService: '*'
     demo-service:
-      path: /**
+      path: /api/demo/**
       serviceId: demo-service
       stripPrefix: false
     #merchant-service:
