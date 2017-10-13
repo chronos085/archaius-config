@@ -3,7 +3,7 @@ ribbon:
   ConnectTimeout: 3000
 zuul:
   routes:
-    ignoredService: '*'
+    #ignoredService: '*'
     demo-service:
       path: /**
       serviceId: demo-service
