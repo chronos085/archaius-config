@@ -7,7 +7,7 @@ zuul:
     demo-service:
       path: /demo/**
       serviceId: demo-service
-      stripPrefix: false
+      stripPrefix: true
     #merchant-service:
     #  path: /merchants/**
     #  serviceId: merchant-service
