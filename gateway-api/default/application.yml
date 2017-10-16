@@ -7,12 +7,12 @@ ribbon:
     enabled: true
     
 zuul:
+  #prefix: /api
   routes:
     ignoredService: '*'
     demo-service:
       path: /demo/**
       serviceId: demo-service
-    #  servicePath: /demo/all
       stripPrefix: false
     #merchant-service:
     #  path: /merchants/**
