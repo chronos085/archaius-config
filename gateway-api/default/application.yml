@@ -10,9 +10,9 @@ zuul:
   #prefix: /api
   routes:
     ignoredService: '*'
-    demo-service:
+    HelloService:
       path: /demo/**
-      serviceId: demo-service
+      serviceId: HelloService
       stripPrefix: false
     #merchant-service:
     #  path: /merchants/**
