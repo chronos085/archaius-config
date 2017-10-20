@@ -1,13 +1,13 @@
 ribbon: 
-  ConnectTimeout: 3000
-  ReadTimeout: 60000
-  maxAutoRetries: 1
-  MaxAutoRetriesNextServer: 2
+  #ConnectTimeout: 3000
+  #ReadTimeout: 60000
+  #maxAutoRetries: 1
+  #MaxAutoRetriesNextServer: 2
   eureka:
     enabled: true
     
 zuul:
-  #prefix: /api
+  prefix: /test
   routes:
     ignoredService: '*'
     HelloService:
