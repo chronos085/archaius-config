@@ -13,7 +13,7 @@ zuul:
     HelloService:
       path: /demo/**
       serviceId: HelloService
-      stripPrefix: false
+      stripPrefix: true
     #merchant-service:
     #  path: /merchants/**
     #  serviceId: merchant-service
