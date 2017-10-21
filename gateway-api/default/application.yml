@@ -1,19 +1,19 @@
-ribbon: 
+#ribbon: 
   #ConnectTimeout: 3000
   #ReadTimeout: 60000
   #maxAutoRetries: 1
   #MaxAutoRetriesNextServer: 2
-  eureka:
-    enabled: true
+#  eureka:
+#    enabled: true
     
-zuul:
-  prefix: /test
-  routes:
-    ignoredService: '*'
-    HelloService:
-      path: /demo/**
-      serviceId: HelloService
-      stripPrefix: true
+#zuul:
+  #prefix: /test
+#  routes:
+#    ignoredService: '*'
+#    HelloService:
+#      path: /demo/**
+#      serviceId: HelloService
+#      stripPrefix: false
     #merchant-service:
     #  path: /merchants/**
     #  serviceId: merchant-service
