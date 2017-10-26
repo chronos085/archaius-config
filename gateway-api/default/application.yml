@@ -5,10 +5,14 @@ zuul:
   prefix: /api
   routes:
     ignoredService: '*'
+    oauth2:
+      path: /uaa/**
+      serviceId: OAUTH-SERVER
+      stripPrefix: false
     hello-services:
       path: /greeting/**
-      serviceId: hello-services
-      #stripPrefix: false
+      serviceId: HELLO-SERVICES
+      stripPrefix: false
      
 #hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 
