@@ -13,22 +13,3 @@ zuul:
       path: /greeting/**
       serviceId: HELLO-SERVICES
       #stripPrefix: true
-     
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
-
-ribbon:
-  eureka:
-    enabled: true
-  ConnectTimeout: 3000
-  ReadTimeout: 60000            
-
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 3
-  client:
-    fetch-registry: true
-    register-with-eureka: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    instance-info-replication-interval-seconds: 5
-    initial-instance-info-replication-interval-seconds: 5
