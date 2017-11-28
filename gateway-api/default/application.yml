@@ -16,11 +16,11 @@ zuul:
      
 #hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 
-#ribbon:
-#  eureka:
-#    enabled: true
-#  ConnectTimeout: 3000
-#  ReadTimeout: 60000            
+ribbon:
+  eureka:
+    enabled: true
+  ConnectTimeout: 3000
+  ReadTimeout: 60000            
 
 eureka:
   instance:
