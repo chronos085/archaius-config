@@ -1,4 +1,4 @@
 turbine:
   aggregator:
     clusterConfig: MICROSERVICES
-  appConfig: HELLO-SERVICES
+  appConfig: HELLO-SERVICES,MICROSERVICE
