@@ -1,0 +1,4 @@
+turbine:
+  aggregator:
+    clusterConfig: MICROSERVICES
+  appConfig: HELLO-SERVICES

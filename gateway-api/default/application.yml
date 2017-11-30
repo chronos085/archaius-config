@@ -1,14 +1,11 @@
-ribbon:
-  ReadTimeout: 60000
-  ConnectTimeout: 3000
+management:
+  context-path: /admin
+    
 zuul:
+  #prefix: /api
   routes:
     ignoredService: '*'
-    invoice-service:
-      path: /invoices/**
-      serviceId: invoice-service
-      stripPrefix: false
-    merchant-service:
-      path: /merchants/**
-      serviceId: merchant-service
-      stripPrefix: true
+    hello-services:
+      path: /greeting/**
+      serviceId: HELLO-SERVICES
+      #stripPrefix: true
