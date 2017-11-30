@@ -1,4 +1,4 @@
 turbine:
-  aggregator:
-    clusterConfig: MICROSERVICES
+  clusterNameExpression: "'default'"
   appConfig: HELLO-SERVICES,MICROSERVICE
+  combineHostPort: true
