@@ -8,8 +8,4 @@ zuul:
     hello-services:
       path: /greeting/**
       serviceId: HELLO-SERVICES
-<<<<<<< HEAD
       #stripPrefix: true
-=======
-      #stripPrefix: true
->>>>>>> 2eabd0e8ed53daed1a768116bf76d7a5123e28d9
