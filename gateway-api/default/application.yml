@@ -2,10 +2,10 @@ management:
   context-path: /admin
     
 zuul:
-  #prefix: /api
+  prefix: /api
   routes:
     ignoredService: '*'
-    hello:
+    hello-services:
       path: /greeting/**
       serviceId: HELLO-SERVICES
-      #stripPrefix: true
+      stripPrefix: true
