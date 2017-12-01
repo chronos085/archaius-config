@@ -5,7 +5,7 @@ zuul:
   #prefix: /api
   routes:
     ignoredService: '*'
-    hello-services:
+    hello:
       path: /greeting/**
       serviceId: HELLO-SERVICES
       #stripPrefix: true
