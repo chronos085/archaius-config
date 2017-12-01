@@ -4,7 +4,7 @@ management:
 zuul:
   prefix: /api
   routes:
-    ignoredService: '*'
+    #ignoredService: '*'
     hello-services:
       path: /greeting/**
       serviceId: HELLO-SERVICES
