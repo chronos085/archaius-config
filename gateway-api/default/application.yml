@@ -8,7 +8,7 @@ zuul:
     hello-services:
       path: /greeting/**
       serviceId: HELLO-SERVICES
-      #stripPrefix: true
+      stripPrefix: true
      
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds : 60000 
 
