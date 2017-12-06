@@ -10,7 +10,7 @@ zuul:
     security-server:
       path: /uaa/**
       serviceId: OAUTH-SERVER
-      stripPrefix: false
+      stripPrefix: true
     hello-services:
       path: /hello/**
       serviceId: HELLO-SERVICES
