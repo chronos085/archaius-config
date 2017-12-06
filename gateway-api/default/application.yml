@@ -8,9 +8,9 @@ zuul:
   ignored-services: '*'
   routes:
     security-server:
-      path: /uaa/**
+      path: /oauth/**
       serviceId: OAUTH-SERVER
-      stripPrefix: true
+      stripPrefix: false
     hello-services:
       path: /hello/**
       serviceId: HELLO-SERVICES
