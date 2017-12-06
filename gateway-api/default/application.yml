@@ -2,17 +2,31 @@ management:
   context-path: /admin
     
 zuul:
+  add-host-header: true
+  ignore-security-headers: false
   prefix: /api
   ignored-services: '*'
   routes:
+    security-server:
+      path: /uaa/**
+      serviceId: OAUTH-SERVER
+      stripPrefix: false
     hello-services:
-      path: /greeting/**
+      path: /hello/**
       serviceId: HELLO-SERVICES
       stripPrefix: false
     microservice:
       path: /estado/**
       serviceId: MICROSERVICE
       stripPrefix: false
+  ratelimit:
+    enabled: true
+    repository: IN_MEMORY
+    behind-proxy: true
+    default-policy: #optional - will apply unless specific policy exists
+      limit: 20 #optional - request number limit per refresh interval window
+      quota: 1000 #optional - request time limit per refresh interval window (in seconds)
+      refresh-interval: 60 #default value (in seconds)
      
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds : 60000 
 
