@@ -4,6 +4,7 @@ management:
 zuul:
   add-host-header: true
   ignore-security-headers: false
+  sensitiveHeaders:
   prefix: /api
   ignored-services: '*'
   routes:
