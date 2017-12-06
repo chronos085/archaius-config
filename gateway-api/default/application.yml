@@ -1,5 +1,5 @@
-management:
-  context-path: /admin
+#management:
+#  context-path: /admin
     
 zuul:
   add-host-header: true
