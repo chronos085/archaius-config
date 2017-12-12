@@ -13,8 +13,8 @@ zuul:
       serviceId: OAUTH-SERVER
       stripPrefix: false
     hello-services:
-      path: /demo/**
-      serviceId: HELLO-SERVICES
+      path: /mo2/**
+      serviceId: MICROSERVICE-OAUTH2
       stripPrefix: false
     microservice:
       path: /estado/**
