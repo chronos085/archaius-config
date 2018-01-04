@@ -37,4 +37,4 @@ ribbon:
   eureka:
     enabled: true   
   eager-load:
-    enabled: false
+    enabled: true
