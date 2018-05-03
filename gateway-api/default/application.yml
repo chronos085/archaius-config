@@ -20,6 +20,10 @@ zuul:
       path: /estado/**
       serviceId: MICROSERVICE
       stripPrefix: false
+    microservice2:
+      path: /estado2/**
+      serviceId: MICROSERVICE
+      stripPrefix: false
   ratelimit:
     enabled: false
     repository: IN_MEMORY
